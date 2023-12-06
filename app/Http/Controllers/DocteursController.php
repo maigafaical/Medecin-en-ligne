@@ -61,10 +61,13 @@ class DocteursController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show( $id)
+    public function show($id)
     {
-        $docteurs = Docteurs::find($id);
-        return view('Docteurs.details',compact('docteurs'));
+        return view('Docteurs.details',[
+
+            'docteurs' => Docteurs::find($id)
+
+      ]);
 
     }
 

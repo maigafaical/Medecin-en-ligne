@@ -59,12 +59,16 @@ class PatientsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show( $id)
+    public function show($id)
     {
-        $patients = Patients::find($id);
-        return view('Patients.details',compact('patients'));
+        return view('Patients.details',[
+
+            'patient' => Patients::find($id)
+
+      ]);
 
     }
+
 
     /**
      * Show the form for editing the specified resource.

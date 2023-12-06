@@ -30,11 +30,7 @@
                   <th scope="col">#</th>
                   <th scope="col">Nom</th>
                   <th scope="col">Prénom</th>
-                  <th scope="col">Age</th>
-                  <th scope="col">Adresse </th>
-                  <th scope="col">Sexe </th>
                   <th scope="col">Téléphone </th>
-                  <th scope="col">Dernière visite</th>
                   <th scope="col">Actions </th>
                 </tr>
               </thead>
@@ -44,19 +40,16 @@
                   <td>{{ $patient->id }}</td>
                   <td>{{ $patient->nom }}</td>
                   <td>{{ $patient->prenom }}</td>
-                  <td>{{ $patient->age }}</td>
-                  <td>{{ $patient->adresse }}</td>
-                  <td>{{ $patient->sexe }}</td>
                   <td>{{ $patient->telephone }}</td>
-                  <td>{{ $patient->derniere_visite }}</td>
+                  
                 
 
                   <td>
                     
 
-                    <a href="{{ route('patients.edit', $patient->id) }}" > <i class="bi bi-pencil-square"></i></a>
-                   
-                    <a href="{{ url('supprimer-patients/' .$patient->id) }}"> <i class="bi bi-trash"></i></a>
+                    <a href="{{ route('patients.edit', $patient->id ) }}" class="btn btn-info"><i class="bi bi-pencil-square" title="modifier"></i></a>
+                    <a href="{{ route('patients.show', $patient->id ) }}" class="btn btn-success"><i class="bi bi-eye" title="détails"></i></a>
+                    <a href="{{ url('supprimer-patients/' .$patient->id) }}" class="btn btn-danger"> <i class="bi bi-trash" title="supprimer"></i></a>
                     
                     
 

@@ -66,10 +66,13 @@ class RendezvousController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show( $id)
+    public function show($id)
     {
-        $rendezvous = Rendezvous::find($id);
-        return view('Rendezvous.details',compact('rendezvous'));
+        return view('Rendezvous.details',[
+
+            'rendezvou' => Rendezvous::find($id)
+
+      ]);
 
     }
 

@@ -45,9 +45,9 @@
                   <td>
                     
 
-                    <a href="{{ route('specialites.edit', $specialite->id) }}" > <i class="bi bi-pencil-square"></i></a>
-                   
-                    <a href="{{ url('supprimer-specialites/' .$specialite->id) }}"> <i class="bi bi-trash"></i></a>
+                    <a href="{{ route('specialites.edit', $specialite->id ) }}" class="btn btn-info"><i class="bi bi-pencil-square" title="modifier"></i></a>
+                  
+                    <a href="{{ url('supprimer-specialites/' .$specialite->id) }}" class="btn btn-danger"> <i class="bi bi-trash" title="supprimer"></i></a>
                     
                     
 

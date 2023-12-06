@@ -85,72 +85,7 @@
 
         </ul>
       </li><!-- End Components Nav_1 -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#components-nav_2" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-menu-button-wide"></i><span>Gestion Factures</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="components-nav_2" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="#">
-              <i class="bi bi-circle"></i><span>Liste Factures</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="bi bi-circle"></i><span>Ajouter Factures</span>
-            </a>
-          </li>
-
-        </ul>
-      </li><!-- End Components Nav_2 -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#components-nav_3" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-menu-button-wide"></i><span>Gestion Services</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="components-nav_3" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="#">
-              <i class="bi bi-circle"></i><span>Liste Services</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="bi bi-circle"></i><span>Ajouter Services</span>
-            </a>
-          </li>
-
-        </ul>
-      </li><!-- End Components Nav_3 -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#components-nav_4" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-menu-button-wide"></i><span>Gestion Salles</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="components-nav_4" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="#">
-              <i class="bi bi-circle"></i><span>Liste Salles</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="bi bi-circle"></i><span>Ajouter Salle</span>
-            </a>
-          </li>
-
-        </ul>
-      </li><!-- End Components Nav_4 -->
-
-      
-
-     
-
-      
-
-
-      
+   
     </ul>
 
   </aside>

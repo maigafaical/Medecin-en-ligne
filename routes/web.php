@@ -6,6 +6,7 @@ use App\Http\Controllers\DocteursController;
 use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\SpecialitesController;
 use App\Http\Controllers\AuthentificationController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\RendezvousController;
 use App\Http\Controllers\RolesController;
 use App\Http\Controllers\WelcomeController;
@@ -44,8 +45,11 @@ Route::get('dashboard', [AuthentificationController::class, 'dashboard'])->name(
 
 Route::get('welcome', [WelcomeController::class, 'index'])->name('welcome');
 
+Route::post('/contact', [ContactController::class, 'contactpost'])->name('contactpost');
+Route::get('contact', [ContactController::class, 'index'])->name('contact');
+
 Route::resource('patients', PatientsController::class);
-Route::get('supprimer-patients/{id}', [DocteursController::class, 'destroy']);
+Route::get('supprimer-patients/{id}', [PatientsController::class, 'destroy']);
 
 Route::resource('docteurs', DocteursController::class);
 Route::get('supprimer-docteurs/{id}', [DocteursController::class, 'destroy']);

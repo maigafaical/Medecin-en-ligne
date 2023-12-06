@@ -30,12 +30,7 @@
                   <th scope="col">#</th>
                   <th scope="col">Nom</th>
                   <th scope="col">Prénom</th>
-                  <th scope="col">Age</th>
-                  <th scope="col">Adresse </th>
-                  <th scope="col">Sexe </th>
-                  <th scope="col">Téléphone </th>
                   <th scope="col">Date </th>
-                  <th scope="col">Heure </th>
                   <th scope="col">Statut </th>
                   <th scope="col">Docteur </th>
                   <th scope="col">Actions </th>
@@ -47,12 +42,7 @@
                   <td>{{ $rendezvou->id }}</td>
                   <td>{{ $rendezvou->nom }}</td>
                   <td>{{ $rendezvou->prenom }}</td>
-                  <td>{{ $rendezvou->age }}</td>
-                  <td>{{ $rendezvou->adresse }}</td>
-                  <td>{{ $rendezvou->sexe }}</td>
-                  <td>{{ $rendezvou->telephone }}</td>
                   <td>{{ $rendezvou->date_rdv }}</td>
-                  <td>{{ $rendezvou->heure_rdv }}</td>
                   <td>{{ $rendezvou->statut }}</td>
                   <td>{{ $rendezvou->docteurs->nom }} {{ $rendezvou->docteurs->prenom }}</td>
                 
@@ -60,9 +50,9 @@
                   <td>
                     
 
-                    <a href="{{ route('rendezvous.edit', $rendezvou->id) }}" > <i class="bi bi-pencil-square"></i></a>
-                   
-                    <a href="{{ url('supprimer-rendezvous/' .$rendezvou->id) }}"> <i class="bi bi-trash"></i></a>
+                    <a href="{{ route('rendezvous.edit', $rendezvou->id ) }}" class="btn btn-info"><i class="bi bi-pencil-square" title="modifier"></i></a>
+                    <a href="{{ route('rendezvous.show', $rendezvou->id ) }}" class="btn btn-success"><i class="bi bi-eye" title="détails"></i></a>
+                    <a href="{{ url('supprimer-rendezvous/' .$rendezvou->id) }}" class="btn btn-danger"> <i class="bi bi-trash" title="supprimer"></i></a>
                     
                     
 
